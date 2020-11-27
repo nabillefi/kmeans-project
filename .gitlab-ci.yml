@@ -9,9 +9,6 @@ variables:
 stages:
     - devloppement
 
-    
-
-
 
 devloppement:
     stage : devloppement
@@ -23,6 +20,6 @@ devloppement:
          - docker push $HEROKU_APP
          - echo -e " push complete ."
          - echo -e " Start pushing the app to the developpement server .. "
-         - docker run  --rm  -e HEROKU_API_KEY=$HEROKU_TOKEN wingrunr21/alpine-heroku-cli container:release web --app datascience-club
+         - docker run  --rm  -e HEROKU_API_KEY=$HEROKU_TOKEN wingrunr21/alpine-heroku-cli container:release web --app epidscclub
          - echo -e " complete"
     

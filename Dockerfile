@@ -1,5 +1,5 @@
 FROM frolvlad/alpine-python-machinelearning
-MAINTAINER "Nabil Lefi <nabillafi1995@gmail.com> Data Science club, Isitcom"
+LABEL maintainer="Nabil Lefi <nabillafi1995@gmail.com> Data Science club, Isitcom"
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt

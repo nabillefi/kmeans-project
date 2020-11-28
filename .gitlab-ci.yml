@@ -13,7 +13,7 @@ devloppement:
     stage : devloppement
     script:
          - echo -e " Start Building Docker image from Docker file ..  "
-         - docker build -t $HEROKU_APP .
+         - docker build --tag $HEROKU_APP .
          - echo -e "\n build complete\n\n Start pushing image to registry.heroku.com ..."
          - docker login --username=_ -p $HEROKU_TOKEN registry.heroku.com
          - docker push $HEROKU_APP

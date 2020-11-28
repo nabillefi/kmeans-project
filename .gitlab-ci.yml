@@ -9,7 +9,6 @@ variables:
 stages:
     - devloppement
 
-
 devloppement:
     stage : devloppement
     script:

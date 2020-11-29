@@ -3,7 +3,7 @@ LABEL maintainer="Nabil Lefi <nabillafi1995@gmail.com> Data Science club, Isitco
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
-EXPOSE 3000
+EXPOSE 5000
 ENV ENVIRONMENT dev
 COPY . /app
 CMD python main.py
